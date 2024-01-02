@@ -3,7 +3,7 @@ A simple way to send slack notification
 
 ## Install
 ```
-pip install -i https://test.pypi.org/simple/ slack-notification
+pip install -i slack-notification
 ```
 
 ## Usage
