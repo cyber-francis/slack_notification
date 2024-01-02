@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.1.4](https://github.com/cyber-francis/slack_notification/compare/v0.1.3...v0.1.4) (2024-01-02)
+
+
+### Bug Fixes
+
+* requirements.txt ([578e30b](https://github.com/cyber-francis/slack_notification/commit/578e30b0488c4688f579f1685d59d099fc9ac5dc))
+* requirements.txt ([be53f59](https://github.com/cyber-francis/slack_notification/commit/be53f5962ee3d6dcc6ae5e55c4ebc254d10b8261))
+
 ## [0.1.3](https://github.com/cyber-francis/slack_notification/compare/v0.1.2...v0.1.3) (2024-01-02)
 
 
