@@ -10,7 +10,7 @@ pip install -i https://test.pypi.org/simple/ slack-notification
 ```python
 from slack_notification.slack_notification import SlackNotification
 
-CHANNEL = "YOUR_CHANNEL" #example T06C3XXXXXX/B06CURXXXX/NU9qdi16r5IdXXXXXXX"
+CHANNEL = "YOUR_CHANNEL" #example TXXXXXXXXXX/BXXXXXXXX/NXXXXXXXXXX"
 slack = SlackNotification(CHANNEL)
 message = "YOUR_MESSAGE"
 response = slack.notify(message)
