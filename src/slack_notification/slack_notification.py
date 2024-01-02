@@ -6,7 +6,9 @@ SLACK_API = "https://hooks.slack.com/services/"
 
 
 class SlackNotification(Singleton):
-    def __init__(self, channel, api=SLACK_API, timeout=10) -> None:
+    __print_banner = False
+
+    def __init__(self, channel, api=SLACK_API, timeout=10, print_banner=False) -> None:
         self._channel = channel
         self._api = api
         self._webhook = self._api + self._channel
