@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.8](https://github.com/cyber-francis/slack_notification/compare/v0.1.7...v0.1.8) (2024-01-02)
+
+
+### Bug Fixes
+
+* updated readme ([fa8fb09](https://github.com/cyber-francis/slack_notification/commit/fa8fb090c03ed97773cf76c5431f932831ddf4ee))
+
 ## [0.1.7](https://github.com/cyber-francis/slack_notification/compare/v0.1.6...v0.1.7) (2024-01-02)
 
 
