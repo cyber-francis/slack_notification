@@ -11,4 +11,3 @@ def test_format_str():
 def test_format_dict():
     formated_message = slack.format({"KEY": "VALUE"})
     assert formated_message == {"text": "{'KEY': 'VALUE'}"}
-    formated_message = slack.format
