@@ -29,18 +29,16 @@ jobs:
       - name: Publish
         uses: pypa/gh-action-pypi-publish@v1.8.11
         with:
-          repository-url: https://test.pypi.org/legacy/
+          # repository-url: https://test.pypi.org/legacy/
           user: __token__
-          password: ${{ secrets.TEST_PYPI_API_TOKEN }}
+          password: ${{ secrets.PYPI_API_TOKEN }}
 
       - name: Test Install
         run: |
-          python3 -m pip install --no-cache-dir -i https://test.pypi.org/simple/ slack-notification
+          python3 -m pip install --no-cache-dir slack-notification
       - name: Test Usage
         run: |
           python3 - <<EOF
           from slack_notification.slack_notification import SlackNotification
 
-          APP_NAME = "APP_X"
-          APP_VERSION = "v0.0.1"
           EOF

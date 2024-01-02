@@ -13,8 +13,12 @@ class SlackNotification(Singleton):
         self._timeout = timeout
 
     def notify(self, message):
-        message = {"text": str(message)}
+        message = self.format(message)
         response = requests.post(
             self._webhook, json.dumps(message).encode("utf-8"), timeout=self._timeout
         )
         return response
+
+    def format(self, message):
+        message = {"text": str(message)}
+        return message
