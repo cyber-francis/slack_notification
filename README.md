@@ -12,6 +12,6 @@ from slack_notification.slack_notification import SlackNotification
 
 CHANNEL = "YOUR_CHANNEL" #example T06C3XXXXXX/B06CURXXXX/NU9qdi16r5IdXXXXXXX"
 slack = SlackNotification(CHANNEL)
-message = {"text": "test"}
+message = "YOUR_MESSAGE"
 response = slack.notify(message)
 ```
