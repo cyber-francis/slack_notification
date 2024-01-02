@@ -1,0 +1,35 @@
+name: Unittests
+on:
+  pull_request:
+    branches: [main]
+  workflow_call:
+permissions:
+  id-token: write
+  contents: write
+  pull-requests: write
+
+jobs:
+  pytest:
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ubuntu-22.04, ubuntu-20.04]
+        python-version: ["3.9", "3.10", "3.11"]
+
+    steps:
+      - name: checkout code
+        uses: actions/checkout@v3
+
+      - name: setup python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+
+      - name: install dependencies
+        run: |
+          python3 -m pip install -r requirements.txt
+          python3 -m pip install pytest==7.4.4
+
+      - name: run unittests
+        run: |
+          PYTHONPATH=src python3 -m pytest -s
