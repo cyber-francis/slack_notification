@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.1.7](https://github.com/cyber-francis/slack_notification/compare/v0.1.6...v0.1.7) (2024-01-02)
+
+
+### Bug Fixes
+
+* optional fields ([0ddb4a6](https://github.com/cyber-francis/slack_notification/commit/0ddb4a6d8849a789a1a500a98b97e4f677d14e50))
+* optional fields ([3b5b9a2](https://github.com/cyber-francis/slack_notification/commit/3b5b9a2d3e7e7ab19747a3f3d17c1a946b2f37b0))
+* optional fields ([8144f72](https://github.com/cyber-francis/slack_notification/commit/8144f722829bed58204b2338d1d3db66bc85f80c))
+
 ## [0.1.6](https://github.com/cyber-francis/slack_notification/compare/v0.1.5...v0.1.6) (2024-01-02)
 
 
